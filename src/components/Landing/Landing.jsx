@@ -3,57 +3,32 @@ import Preloader from "../Preloader/Preloader";
 import Up from "../Up/Up";
 import Header from "../Header/Header";
 import MainSection from "../MainSection/MainSection";
+import Directions from "../Directions/Directions";
+import Reviews from "../Reviews/Reviews";
+import Benefits from "../Benefits/Benefits";
+import Faq from "../Faq/Faq";
+import Contact from "../Contact/Contact";
+import {compose} from "redux";
+import {withRouter} from "react-router-dom";
 
-const Landing = () => {
-    const state = {
-        headerInfo: {
-            textLogo: 'SKYCODE',
-            menuLinks: [
-                {
-                    text: 'Главная',
-                    link: '#eight-banner'
-                }, {
-                    text: 'Направления',
-                    link: '#saas_two_feature'
-                }, {
-                    text: 'Отзывы',
-                    link: '#saas_two_team'
-                }, {
-                    text: 'Плюсы',
-                    link: '#saas_two_feature1'
-                }, {
-                    text: 'FAQ',
-                    link: '#ei-faq'
-                }, {
-                    text: 'Контакты',
-                    link: '#ei-newslatter'
-                }
-            ]
-        },
-        mainInfo: {
-            mainText: 'Ваш гид в направлении',
-            directions: [
-                {
-                    text: 'Scratch',
-                },{
-                    text: 'Frontend',
-                },{
-                    text: 'Python',
-                }
-            ],
-            altText: 'Объясняем простыми словами сложные вещи'
-        }
-    };
+const Landing = (props) => {
     return (
         <>
             <Preloader/>
             <Up/>
-            <Header headerInfo={state.headerInfo}/>
+            <Header/>
             <div id="fullpage" className="animate__animated animate__fadeInDown">
-                <MainSection mainInfo={state.mainInfo}/>
+                <MainSection/>
+                <Directions/>
+                <Reviews/>
+                <Benefits/>
+                <Faq/>
+                <Contact/>
             </div>
         </>
     );
 }
 
-export default Landing;
+const LandingContainer = compose(withRouter)(Landing);
+
+export default LandingContainer;

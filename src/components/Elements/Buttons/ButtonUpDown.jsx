@@ -1,3 +1,5 @@
+import React from "react";
+
 const ButtonUpDown = ({link, text, icon, classes = ''}) => {
     return (
         <div className={"saas_btn " + classes}>

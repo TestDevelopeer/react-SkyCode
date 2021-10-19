@@ -1668,6 +1668,10 @@ Sticky Menu
 /*.saas_two_feature_section {
   padding: 105px 0px 85px;
 }*/
+.formButton {
+    background: none;
+    border: none;
+}
 
 .saas_btn a {
     padding: 10px 25px 10px 25px;
@@ -1682,7 +1686,6 @@ Sticky Menu
 /*Intergation area*/
 /*----------------------------------------------------*/
 .integration_section {
-    background-color: #f0f2f7;
     padding: 120px 0px 55px;
 }
 
@@ -1771,6 +1774,8 @@ Sticky Menu
     top: 40%;
     right: 165px;
     transform: translateX(-50%);
+    transform: translate3d(0px, 32px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+    -webkit-transform: translate3d(0px, 32px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
 }
 
 .ei-faq-section .fq-shape-style5 {
@@ -2645,4 +2650,8 @@ SaaSio - HR Management
     position: absolute;
     background-image: linear-gradient(
             125deg, #6407c1 0%, #324add 49%, #008df9 100%);
+}
+
+.formError input {
+    border-color: red;
 }

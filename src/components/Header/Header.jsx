@@ -1,6 +1,8 @@
 import React from "react";
 import MainMenu from "./MainMenu";
 import MobileMenu from "./MobileMenu";
+import {compose} from "redux";
+import {connect} from "react-redux";
 
 const Header = (props) => {
     return (
@@ -13,4 +15,8 @@ const Header = (props) => {
     );
 }
 
-export default Header;
+const mapStateToProps = (state) => ({
+    headerInfo: state.headerReducer
+});
+
+export default compose(connect(mapStateToProps))(Header);

@@ -3,6 +3,8 @@ import ButtonUpDown from "../Elements/Buttons/ButtonUpDown";
 import bLaptop from '../../assets/img/banner/b-laptop.png';
 import bShapeup from '../../assets/img/shape/b-shapeup.png';
 import bShapemiddle from '../../assets/img/shape/b-shapemiddle.png';
+import {compose} from "redux";
+import {connect} from "react-redux";
 
 const MainSection = (props) => {
     let {mainText, directions, altText} = props.mainInfo;
@@ -57,4 +59,8 @@ const MainSection = (props) => {
     );
 }
 
-export default MainSection;
+const mapStateToProps = (state) => ({
+    mainInfo: state.mainReducer
+});
+
+export default compose(connect(mapStateToProps))(MainSection);
