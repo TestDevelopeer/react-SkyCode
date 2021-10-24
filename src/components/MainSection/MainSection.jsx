@@ -1,17 +1,30 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ButtonUpDown from "../Elements/Buttons/ButtonUpDown";
 import bLaptop from '../../assets/img/banner/b-laptop.png';
 import bShapeup from '../../assets/img/shape/b-shapeup.png';
 import bShapemiddle from '../../assets/img/shape/b-shapemiddle.png';
 import {compose} from "redux";
 import {connect} from "react-redux";
+import initHeadline from '../../assets/js/typer-new';
 
 const MainSection = (props) => {
-    let {mainText, directions, altText} = props.mainInfo;
+    let {mainText, directions, altText, centerText} = props.mainInfo;
+    useEffect(() => {
+        initHeadline();
+    }, []);
     return (
         <section id="eight-banner" className="eight-banner-section position-relative">
             <div className="container">
                 <div className="row">
+                    <div className="col-lg-6 col-12">
+                        <div className="eight-banner-content">
+                            <div className="banner-content-box appeight-headline pera-content">
+                                <span className="s2-tilte_tag main-title-text"><h2>{centerText}</h2></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row banner-img">
                     <div className="col-lg-6">
                         <div className="eight-banner-content">
                             <div className="banner-content-box appeight-headline pera-content">
@@ -19,11 +32,13 @@ const MainSection = (props) => {
                                     {mainText} <br/>
                                     <span className="cd-words-wrapper">
                                         {directions.map((value, index) => {
-                                            return <b key={index} className={index === 0 ? 'is-visible' : 'is-hidden'}>{value.text}</b>
+                                            return <b key={'directions_' + index} className={index === 0 ? 'is-visible' : 'is-hidden'}>{value.text}</b>
                                         })}
                                     </span>
                                 </h1>
-                                <p>{altText}</p>
+                                {altText.map((value, index) => {
+                                    return <span key={'altText_' + index}><p>{value}</p><br/></span>
+                                })}
                                 <ButtonUpDown link='#ei-newslatter' icon='fas fa-clipboard-list' text='Начни сейчас'
                                               classes='saas_btn_white ei-banner-btn'/>
                                 <div className="ei-banner-review pera-content ul-li">
@@ -39,9 +54,7 @@ const MainSection = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 banner-img" style={{zIndex: 10}}>
-                        <img src={bLaptop} alt=""/>
-                    </div>
+                    <img src={bLaptop} alt=""/>
                 </div>
             </div>
             <div className="waveWrapper waveAnimation">

@@ -8,7 +8,7 @@ import {connect} from "react-redux";
 const Reviews = (props) => {
     const {reviewItems, reviewIndicators, title} = props.reviewInfo;
     return (
-        <section id="saas_two_team" className="testimonial_section">
+        <section ref={props.reF} id="saas_two_team" className="testimonial_section">
             <div className="container">
                 <div className="section_title text-center">
                     <Title mainText={title.mainText} altText={title.altText} classes='text-center'/>

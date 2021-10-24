@@ -1,7 +1,7 @@
 
 (function() {
 
-	"use strict";
+	
 
 	var SaaSio = {
 		init: function() {
@@ -13,7 +13,7 @@
 				this.Saasiopreloader();
 				this.BackgroundImage();
 				this.SaaSioOnePageNav();
-				this.counterUp();
+				//this.counterUp();
 				this.EiStickyMenu();
 				this.EiscreenSlider();
 				this.EiscrollTop();
@@ -51,7 +51,7 @@
 				this.DiaPortSlider();
 				this.DiaTeamSlide();
 				this.DiaTestimonial();
-				this.DiaCounterUp();
+				//this.DiaCounterUp();
 				this.DiaScrollImg();
 				this.PmBlog();
 				this.PmStickymenu();
@@ -154,7 +154,7 @@
 					});
 				}			
 			},	
-			counterUp: function (){
+			/*counterUp: function (){
 				if ($(".odometer").length) {
 					$('.odometer').appear();
 					$(document.body).on('appear', '.odometer', function(e) {
@@ -168,7 +168,7 @@
 						};
 					});
 				}
-			},
+			},*/
 			EiscreenSlider: function (){
 				if ($('.ei-appScreenshotCarousel-container').length) {
 					if ($('.ei-appScreenshotCarousel-container').length) {
@@ -921,7 +921,7 @@
 					.addClass("active");
 				});
 			},
-			DiaCounterUp: function (){
+			/*DiaCounterUp: function (){
 				if ($(".odometer").length) {
 					$('.odometer').appear();
 					$(document.body).on('appear', '.odometer', function(e) {
@@ -935,7 +935,7 @@
 						};
 					});
 				}
-			},
+			},*/
 			DiaScrollImg: function (){
 				(function($) {
 					$.fn.visible = function(partial) {
@@ -1073,20 +1073,23 @@
 }
 jQuery(document).ready(function (){
 	SaaSio.init();
-	$('.popUp-button').on('click', function(){
-		$('.popUp-background').removeClass('animate__delay-2s');
-		$('.popUp-newslatter').removeClass('animate__delay-2s');
-		$('.popUp-background').addClass('animate__delay-1s');
-		$('.popUp-background').addClass('animate__fadeOut');
-		$('.popUp-newslatter').addClass('animate__bounceOutLeft');
-		setTimeout(function(){
-			$('.popUp-background').removeClass('popUp-show');
-		}, 1000);
-	})
 	$('.eight-feature-box').removeClass('hover');
 	if (document.documentElement.clientWidth < 992) {
 		$('.eight-feature-box').addClass('hover');
 	}
+
+	/*function isScrolledIntoView(elem) {
+		let docViewTop = $(window).scrollTop();
+		let docViewBottom = docViewTop + $(window).height();
+
+		let elemTop = $(elem).offset().top;
+		let elemBottom = elemTop + $(elem).height();
+
+		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}
+	$(document).on('scroll', function(){
+		console.log(isScrolledIntoView('#saas_two_feature'))
+	})*/
 });
 
 })();

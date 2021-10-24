@@ -1,5 +1,5 @@
-import {createField, Input, PhoneInputMask} from "../FormsControl/FormsControls";
-import {isEmail, LengthName, LengthPhone, required} from "../../utils/validator";
+import {createField, Input} from "../FormsControl/FormsControls";
+import {isEmail, required} from "../../utils/validator";
 import {reduxForm} from "redux-form";
 import React from "react";
 import ButtonUpDown from "../Elements/Buttons/ButtonUpDown";
@@ -29,7 +29,7 @@ const ContactFormContainer = ({invalid, handleSubmit}) => {
                         })}
                 </div>
                 <div className="col-lg-6 col-12">
-                    {createField([required, LengthPhone], PhoneInputMask,
+                    {createField([required], Input,
                         {
                             placeholder: 'Ваш номер телефона',
                             name: 'phone',

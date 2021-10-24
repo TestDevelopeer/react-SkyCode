@@ -1,7 +1,7 @@
 import React from "react";
 
 const ReviewItem = (props) => {
-    const {text, cntStars, avatar, user, direction, classes} = props.reviewItems;
+    const {text, cntStars, avatar, user, direction} = props.reviewItems;
     let stars = [];
     for (let i = 0; i < cntStars; i++) {
         stars.push(<li key={`reviewStar_${i}`}><i className="fas fa-star"/></li>);
@@ -18,7 +18,7 @@ const ReviewItem = (props) => {
                 <div className="qoute_mark relative-position"/>
                 <div className="testimonial_name_designation">
                     <div className="testimonial_img float-left">
-                        <img src={avatar} alt=""/>
+                        <img src={process.env.REACT_APP_BASENAME + avatar} alt=""/>
                     </div>
                     <div className="testimonial_meta saas-modern-headline pera-content">
                         <h4>{user}</h4>

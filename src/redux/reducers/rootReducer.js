@@ -7,6 +7,8 @@ import benefitReducer from './benefitReducer';
 import faqReducer from './faqReducer';
 import contactReducer from './contactReducer';
 import {reducer as formReducer} from 'redux-form';
+import priceReducer from "./priceReducer";
+import countUpReducer from "./countUpReducer";
 
 const rootReducer = combineReducers({
     headerReducer,
@@ -16,7 +18,9 @@ const rootReducer = combineReducers({
     benefitReducer,
     faqReducer,
     contactReducer,
-    form: formReducer
+    form: formReducer,
+    priceReducer,
+    countUpReducer
 });
 
 export default rootReducer;

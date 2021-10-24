@@ -1,4 +1,5 @@
 const initialState = {
+    centerText: 'Первая детская IT-академия',
     mainText: 'Ваш гид в направлении',
     directions: [
         {
@@ -9,7 +10,12 @@ const initialState = {
             text: 'Python',
         }
     ],
-    altText: 'Объясняем простыми словами сложные вещи'
+    altText: [
+        'Объясняем простыми словами сложные вещи',
+        'Подстроимся под расписание ребенка',
+        'Развиваем логику',
+        'Знакомим с перспективной профессией'
+    ]
 };
 
 const mainReducer = (state = initialState, action) => {

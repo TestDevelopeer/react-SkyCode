@@ -1,3 +1,6 @@
+import {Link} from "react-router-dom";
+import React from "react";
+
 const MobileMenu = (props) => {
     let {textLogo, menuLinks} = props.headerInfo;
     return (
@@ -17,7 +20,9 @@ const MobileMenu = (props) => {
                     <nav className="s2-mobile-main-navigation  clearfix ul-li">
                         <ul id="m-main-nav" className="navbar-nav text-capitalize clearfix">
                             {menuLinks.map((value, index) => {
-                                return <li key={index}><a className="nav-link" href={value.link}>{value.text}</a></li>
+                                return <li key={index}>
+                                    <Link className={'nav-link'} to={'/'+value.link}>{value.text}</Link>
+                                </li>
                             })}
                         </ul>
                     </nav>

@@ -22,7 +22,7 @@ const Benefits = (props) => {
                         })}
                     </div>
                 </div>
-                <LinkMore link='!#' text='Хотите узнать больше?' classes='text-center' />
+                <LinkMore link="#ei-newslatter" text='Хотите узнать больше?' classes='text-center' />
             </div>
         </section>
     );

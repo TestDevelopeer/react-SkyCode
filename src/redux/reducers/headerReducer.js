@@ -1,5 +1,5 @@
 const initialState = {
-    textLogo: 'SKYCODE',
+    textLogo: 'SKY-ACADEMY',
     menuLinks: [
         {
             text: 'Главная',
@@ -11,7 +11,7 @@ const initialState = {
             text: 'Отзывы',
             link: '#saas_two_team'
         }, {
-            text: 'Плюсы',
+            text: 'Преимущества',
             link: '#saas_two_feature1'
         }, {
             text: 'FAQ',
