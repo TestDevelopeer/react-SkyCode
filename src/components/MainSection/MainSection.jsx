@@ -37,7 +37,7 @@ const MainSection = (props) => {
                                     </span>
                                 </h1>
                                 {altText.map((value, index) => {
-                                    return <span key={'altText_' + index}><p>{value}</p><br/></span>
+                                    return <span key={'altText_' + index}><p><i className="fas fa-check"/> {value}</p><br/></span>
                                 })}
                                 <ButtonUpDown link='#ei-newslatter' icon='fas fa-clipboard-list' text='Начни сейчас'
                                               classes='saas_btn_white ei-banner-btn'/>

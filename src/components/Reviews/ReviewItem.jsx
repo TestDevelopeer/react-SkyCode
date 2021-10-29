@@ -1,7 +1,7 @@
 import React from "react";
 
 const ReviewItem = (props) => {
-    const {text, cntStars, avatar, user, direction} = props.reviewItems;
+    const {text, cntStars, avatar, user, direction, list} = props.reviewItems;
     let stars = [];
     for (let i = 0; i < cntStars; i++) {
         stars.push(<li key={`reviewStar_${i}`}><i className="fas fa-star"/></li>);
@@ -10,7 +10,20 @@ const ReviewItem = (props) => {
         <div className={"carousel-item " + props.classes}>
             <div className="testimonial_content">
                 <div className="testimonial_text relative-position pera-content">
-                    <p>{text}</p>
+                    {text.map((value, index) => {
+                        return <p key={'review_text_' + index}>{value}</p>
+                    })}
+                    {list ?
+                        <>
+                            <p>{list.text}</p>
+                            <ul>
+                                {list.listText.map((value, index) => {
+                                    return <li key={'listText_' + index}>{value}</li>
+                                })}
+                            </ul>
+                        </>
+                        : null
+                    }
                     <div className="testimonial_rating ul-li">
                         <ul>{stars}</ul>
                     </div>

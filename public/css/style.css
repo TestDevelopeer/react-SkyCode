@@ -839,18 +839,20 @@ a:visited {
 }
 
 /*---------------------------------------------------- */
-/*Footer  area*/
+/*Footer area*/
 /*----------------------------------------------------*/
-
-.ei-footer-copyright {
-    margin-top: 40px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.ei-footer-copyright .ei-footer-copyright-content {
-    padding: 25px 0px 15px;
-    border-top: 2px solid #dee2ef;
+.ei-footer-shape3 {
+    left: -50px;
+    right: 0;
+    opacity: 0.5;
+    z-index: -1;
+    top: -100px;
+    margin: 0 auto;
+    text-align: center;
+    animation-name: left-right-move;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes left-right-move {
@@ -865,18 +867,224 @@ a:visited {
     }
 }
 
-.ei-footer-shape3 {
-    left: -50px;
+.dia-footer-section {
+    background-color: #1e2532;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+.dia-footer-widget .dia-widget-title {
+    font-size: 16px;
+    color: #05071f;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.dia-footer-widget .dia-footer-logo {
+    margin-bottom: 18px;
+}
+
+.dia-footer-widget p {
+    max-width: 220px;
+    line-height: 1.875;
+}
+
+.dia-footer-widget .dia-payment-mathod {
+    margin-top: 30px;
+}
+
+.dia-footer-widget ul li {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.dia-footer-widget ul li a {
+    color: #05071f;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+}
+
+.dia-footer-widget ul li a:before {
+    left: -15px;
+    top: 0px;
+    content: "";
+    font-size: 12px;
+    font-weight: 900;
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+}
+
+.dia-footer-widget .footerContact li a:before {
+    content: none;
+}
+
+.dia-footer-widget .footerContact li i {
+    color: #fff;
+    margin-right: 5px;
+}
+
+.dia-footer-widget .footerContact li {
+    padding-left: 0px;
+}
+
+.dia-footer-widget ul li a:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    background-color: #0072fd;
+    transition: 0.3s all ease-in-out;
+}
+
+.dia-footer-widget ul li a:hover {
+    color: #0072fd;
+    margin-left: 10px;
+}
+
+.dia-footer-widget ul li a:hover:after {
+    width: 100%;
+}
+
+.dia-footer-widget h4 {
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 24px;
+    margin-right: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.dia-footer-widget h4 i {
+    left: 0;
+    top: 2px;
+    color: #001fff;
+    font-size: 16px;
+    margin-right: 5px;
+    position: absolute;
+}
+
+.dia-footer-widget h4 span {
+    font-family: "Roboto";
+    font-weight: 400;
+    margin-top: 10px;
+    display: block;
+    color: #818181;
+}
+
+.dia-footer-widget .download-btn {
+    width: 100%;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.dia-footer-widget .download-btn a {
+    margin-right: 10px;
+}
+
+.dia-footer-widget .dia-footer-social {
+    margin-top: 15px;
+}
+
+.dia-footer-widget .dia-footer-social a {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #fff;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 5px;
+    display: inline-block;
+    transition: 0.3s all ease-in-out;
+    box-shadow: 0px 0px 9px 0px rgba(15, 54, 131, 0.07);
+}
+
+.dia-footer-widget .dia-footer-social a:nth-child(1) {
+    color: #16599b;
+}
+
+.dia-footer-widget .dia-footer-social a:nth-child(2) {
+    color: #03a9f4;
+}
+
+.dia-footer-widget .dia-footer-social a:nth-child(3) {
+    color: #ea4c89;
+}
+
+.dia-footer-widget .dia-footer-social a:nth-child(4) {
+    color: #0d6fff;
+}
+
+.dia-footer-widget .dia-footer-social a:hover {
+    transform: translateY(5px);
+}
+
+.dia-footer-copyright {
+    color: #373a5b;
+    font-size: 14px;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.dia-footer-copyright .dia-footer-copyright-content {
+    padding: 25px 0px 15px;
+    border-top: 2px solid #dee2ef;
+}
+
+.dia-footer-copyright .dia-copyright-menu {
+    float: right;
+}
+
+.dia-footer-copyright .dia-copyright-menu a {
+    margin-left: 35px;
+}
+
+@keyframes left-right-move {
+    0% {
+        transform: translateX(-100px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(-100px);
+    }
+}
+
+.dia-footer-shape3 {
+    left: 0;
     right: 0;
-    opacity: 0.5;
+    opacity: 1;
     z-index: -1;
-    bottom: 100px;
+    top: 100px;
     margin: 0 auto;
     text-align: center;
-    animation-name: left-right-move;
     animation-duration: 25s;
-    animation-iteration-count: infinite;
+    animation-name: left-right-move;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.dia-footer-copyright .dia-footer-copyright-content {
+    border-top: 2px solid #242937;
+}
+
+.dia-footer-widget .dia-widget-title {
+    color: #fff;
+}
+
+.dia-footer-widget p,
+.dia-footer-widget ul li a,
+.dia-footer-copyright .dia-copyright-menu a,
+.dia-footer-widget h4 {
+    color: #C4C4C4;
 }
 
 /*---------------------------------------------------- */
@@ -910,6 +1118,7 @@ a:visited {
     .eight-banner-section .eight-banner-content h1 {
         font-size: 60px;
     }
+
     .eg-fun-fact-section .eg-fun-fact-mockup .fn-shape-item1 {
         display: none;
     }
@@ -952,6 +1161,7 @@ a:visited {
     .ei-faq-section .ei-faq-queans {
         margin-top: 20px;
     }
+
     .eg-fun-fact-section .eg-fun-fact-mockup .fn-shape {
         display: none;
     }
@@ -989,6 +1199,7 @@ a:visited {
     .newslatter_content {
         width: 100%;
     }
+
     .eg-fun-fact-section {
         padding: 60px 0px;
     }
@@ -1082,10 +1293,6 @@ a:visited {
 /*----------------------------------------------------*/
 
 /*---------------------------------------------------- */
-/*footer area*/
-/*----------------------------------------------------*/
-
-/*---------------------------------------------------- */
 /*mobile menu area*/
 /*----------------------------------------------------*/
 
@@ -1127,15 +1334,22 @@ a:visited {
         left: -195px;
     }
 }
+
 @media (max-width: 1024px) {
     .eg-fun-fact-section .eg-fun-fact-mockup {
         left: -320px;
     }
+
+    .dia-footer-widget .download-btn a {
+        margin-right: 0px;
+    }
 }
+
 @media screen and (max-width: 991px) {
     .banner-img img {
         display: none;
     }
+
     .eg-fun-fact-section .eg-fun-fact-mockup {
         position: static;
         margin-bottom: 40px;
@@ -1143,6 +1357,10 @@ a:visited {
 
     .eg-fun-fact-section .eg-funfact-text {
         float: none !important;
+    }
+
+    .dia-footer-widget {
+        margin-bottom: 30px;
     }
 }
 
@@ -1330,7 +1548,7 @@ a:visited {
 .testimonial_slider .carousel-control-next {
     top: auto;
     left: 190px;
-    bottom: 40px;
+    bottom: -50px;
     font-size: 18px;
     color: #373a5b;
     width: 50px;
@@ -1392,8 +1610,8 @@ a:visited {
 
 .testimonial_indicator .carousel-indicators li {
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     text-align: center;
     color: #202120;
     border-radius: 50%;
@@ -1437,6 +1655,10 @@ a:visited {
 .testimonial_indicator .carousel-indicators li:nth-child(6) {
     right: 120px;
     top: -30px;
+}
+
+.testimonial_indicator .carousel-indicators li:nth-child(6) img {
+    width: 100%;
 }
 
 .testimonial_indicator .active {
@@ -1499,10 +1721,6 @@ a:visited {
 }
 
 /*---------------------------------------------------- */
-/*Footer area*/
-/*----------------------------------------------------*/
-
-/*---------------------------------------------------- */
 /*responsive area*/
 /*----------------------------------------------------*/
 @media screen and (max-width: 991px) {
@@ -1510,9 +1728,11 @@ a:visited {
     .testimonial_indicator {
         display: none;
     }
+
     .testimonial_section .section_title {
         padding-bottom: 0px;
     }
+
     .testimonial_slider .carousel-control-prev,
     .testimonial_slider .carousel-control-next {
         bottom: -50px;
@@ -1546,6 +1766,27 @@ a:visited {
     .newslatter_content .newslatter-form {
         padding-left: 0;
         margin: 0 15px;
+    }
+
+    .dia-footer-section {
+        padding-top: 50px;
+    }
+
+    .dia-footer-widget .dia-payment-mathod {
+        margin-top: 20px;
+    }
+
+    .dia-footer-copyright .dia-copyright-menu {
+        float: none;
+    }
+
+    .dia-footer-copyright .dia-copyright-menu a {
+        margin-left: 0;
+        margin: 0px 8px;
+    }
+
+    .dia-footer-copyright-content {
+        text-align: center;
     }
 }
 
@@ -2040,13 +2281,6 @@ a:visited {
 /* Pricing area*/
 /*----------------------------------------------------*/
 
-/*---------------------------------------------------- */
-/* Footer area*/
-/*----------------------------------------------------*/
-
-/*---------------------------------------------------- */
-/* Footer area*/
-/*----------------------------------------------------*/
 .s2-mobile_menu_content {
     top: 0px;
     bottom: 0;
@@ -2166,6 +2400,10 @@ a:visited {
     .s2-mobile_menu_button {
         display: block;
     }
+
+    .widget_title {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -2177,6 +2415,14 @@ a:visited {
         max-width: 370px;
         margin: 0 auto;
         margin-bottom: 50px;
+    }
+
+    .copyright_text {
+        text-align: center;
+    }
+
+    .copyright_text span {
+        float: none;
     }
 }
 
@@ -2255,10 +2501,6 @@ a:visited {
 
 /*---------------------------------------------------- */
 /*get in touch area*/
-/*----------------------------------------------------*/
-
-/*---------------------------------------------------- */
-/*Footer area*/
 /*----------------------------------------------------*/
 
 /*---------------------------------------------------- */
@@ -2419,10 +2661,6 @@ SaaSio - HR Management
 
 /*---------------------------------------------------- */
 /*Blog area*/
-/*----------------------------------------------------*/
-
-/*---------------------------------------------------- */
-/*Footer area*/
 /*----------------------------------------------------*/
 
 /*---------------------------------------------------- */
@@ -2652,6 +2890,11 @@ SaaSio - HR Management
     color: #001fff !important;
 }
 
+.textLogo.white-logo {
+    color: #fff !important;
+}
+
+
 .upper_icon i {
     color: #001fff;
 }
@@ -2742,6 +2985,8 @@ SaaSio - HR Management
 }
 
 .str-about-section .str-about-content .str-section-title {
+    display: flex;
+    align-items: center;
     padding-bottom: 25px;
 }
 
@@ -2752,10 +2997,6 @@ SaaSio - HR Management
     line-height: 1.647;
     padding-bottom: 25px;
     padding-top: 25px;
-}
-
-.str-about-section .str-about-content .str-about-list {
-    padding: 25px 0px 22px;
 }
 
 .str-about-section .str-about-content .str-about-list li {
@@ -2939,6 +3180,7 @@ SaaSio - HR Management
 }
 
 .str-section-title h2 {
+    max-width: max-content;
     display: flex;
     flex-wrap: wrap;
     color: #010101;
@@ -2946,6 +3188,13 @@ SaaSio - HR Management
     font-weight: 700;
     position: relative;
     padding: 25px 0px 0px;
+}
+
+@media screen and (max-width: 568px) {
+    .str-section-title h2 {
+        width: 100%;
+        max-width: none;
+    }
 }
 
 .str-section-title.str-title-left h2:before {
@@ -3043,7 +3292,7 @@ SaaSio - HR Management
     text-transform: uppercase;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     .textLogo {
         font-size: 18px;
     }
@@ -3057,12 +3306,13 @@ SaaSio - HR Management
     .eight-banner-section {
         padding-top: 105px;
     }
+
     .main-title-text h2 {
         font-size: 30px;
     }
 }
 
-@media screen and (max-width: 552px){
+@media screen and (max-width: 552px) {
     .main-title-text h2 {
         font-size: 20px;
     }

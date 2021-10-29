@@ -29,7 +29,7 @@ const initialState = {
             btnLink: '/direction/python',
             btnIcon: 'fas fa-plus',
             btnText: 'Записаться'
-        },
+        }
     ]
 };
 

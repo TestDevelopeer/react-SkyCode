@@ -7,14 +7,16 @@ import LandingContainer from "../../Landing/Landing";
 import { useHistory } from "react-router-dom";
 import Contact from "../../Contact/Contact";
 import Faq from "../../Faq/Faq";
+import {compose} from "redux";
+import {connect} from "react-redux";
 
-const DirectionPage = () => {
+const DirectionPage = (props) => {
     const history = useHistory();
     const { directionType } = useParams();
     const pages = {
-        'scratch': <DirectionScratch history={history}/>,
-        'frontend': <DirectionFrontend history={history}/>,
-        'python': <DirectionPython history={history}/>
+        'scratch': <DirectionScratch directionInfo={props.directionInfo} history={history}/>,
+        'frontend': <DirectionFrontend directionInfo={props.directionInfo} history={history}/>,
+        'python': <DirectionPython directionInfo={props.directionInfo} history={history}/>
     }
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -35,4 +37,8 @@ const DirectionPage = () => {
     );
 }
 
-export default DirectionPage;
+const mapStateToProps = (state) => ({
+   directionInfo: state.directionReducer.cardInfo
+});
+
+export default compose(connect(mapStateToProps))(DirectionPage);

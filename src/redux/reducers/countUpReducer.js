@@ -20,7 +20,7 @@ const initialState = {
             start: 0,
             end: 10,
             postText: 'k',
-            text: 'уроков в неделю'
+            text: 'уроков в месяц'
         },
     ]
 };

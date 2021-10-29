@@ -6,8 +6,8 @@ import {connect} from "react-redux";
 
 const Header = (props) => {
     const headerDisablePath = [
-        '/price',
-        '/info'
+        '/price/r',
+        '/price/u'
     ];
     let isDisable = false;
     for (let i in headerDisablePath) {

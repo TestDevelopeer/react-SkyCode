@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
 import MainSection from "../MainSection/MainSection";
 import Directions from "../Directions/Directions";
 import Reviews from "../Reviews/Reviews";

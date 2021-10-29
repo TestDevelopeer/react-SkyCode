@@ -20,7 +20,7 @@ const CountUp = (props) => {
                                     <div className="row">
                                         {props.counterInfo.counters.map((value, index) => {
                                             return (
-                                                <div className="col-lg-3 col-md-6 col-12 counter-cards">
+                                                <div key={'counterUp_' + index} className="col-lg-3 col-md-6 col-12 counter-cards">
                                                     <CounUpCounter key={'counter_' + index} counterInfo={value} isVisible={isVisible}/>
                                                 </div>
                                             )

@@ -22,7 +22,7 @@ const Price = (props) => {
                             <div className="aplpg-title-area text-center wow fadeInUp animated"
                                  style={{visibility: "visible", animationName: "fadeInUp"}}>
                                 <div className="saas_btn price-home">
-                                    <Link to='/'><i className="fas fa-home"/> На главную</Link>
+                                    <Link to='/#eight-banner'><i className="fas fa-home"/> На главную</Link>
                                 </div>
                             </div>
                         </div>

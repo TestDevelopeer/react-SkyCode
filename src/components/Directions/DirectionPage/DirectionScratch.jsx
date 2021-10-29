@@ -1,6 +1,7 @@
 import React from 'react';
 import ButtonUpDown from "../../Elements/Buttons/ButtonUpDown";
 import gif from '../../../assets/img/directions/scratch.gif';
+import DirectionButtonBlock from "./DirectionButtonBlock";
 
 const DirectionScratch = (props) => {
     return (
@@ -15,56 +16,67 @@ const DirectionScratch = (props) => {
                             <span className="str-title-tag">Подробнее о</span>
                             <span className="str-title-h">Scratch</span>
                         </h2>
+                        <ButtonUpDown type={'url'} text={'Frontend'} icon={'fab fa-node-js'} link={props.directionInfo[1].btnLink}/>
+                        <div className='ml-4'>
+                            <ButtonUpDown type={'url'} text={'Python'} icon={'fab fa-python'} link={props.directionInfo[2].btnLink}/>
+                        </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-6 col-12">
                             <div className="str-about-text">
                                 <div className="str-about-textarea">
-                                    Scratch – это визуальная среда программирования, в которой ученик создавая игры научится алгоритмическому
-                                    мышлению, изучит базовые концепции языков программирования, что позволит отвлечь ребенка от бесцельного сидения за
-                                    компьютером, а направить его энергию в полезное русло.
+                                    Scratch — первые шаги в мир высоких технологий.
                                 </div>
                                 <span className="s2-tilte_tag direction-age">8-12 лет</span>
                                 <div className="str-about-textarea">
-                                    Если у ребенка нет опыта, то этот курс для него.
+                                    Обучение на этом курсе подойдет новичкам. Учиться может каждый ребенок!
                                 </div>
                                 <div className="str-about-details">
-                                    В ходе обучения ребенок научится:
+                                    Мы позаботились о том, чтобы курс включал в себя все, что поможет ребенку освоить базу и принципы
+                                    программирования. Доступный процесс погружения позволяет использовать ребенку компьютер не только как средство
+                                    развлечения, но и как рабочий инструмент. На нашем курсе ребята изучают циклы, переменные и другие понятия из баз
+                                    учебного программирования, разрабатывая игры. Код в ней складывается из цветных блоков, которые нужно перемещать,
+                                    учитывая логику и принципы программы.
+                                </div>
+                                <div className="str-about-textarea">
+                                    Как проходит обучение:
+                                </div>
+                                <div className="str-about-details">
+                                    Обучение проходит в комфортных условиях для ребенка, с индивидуально подобранным преподавателем, который поддержит
+                                    и поможет с возникающими вопросами.
+                                </div>
+                                <div className="str-about-textarea">
+                                    Формат обучения:
+                                </div>
+                                <div className="str-about-details">
+                                    E-learning-обучение с помощью интернета и мультимедиа. Продолжительность урока — 50 минут на площадке Zoom.
+                                </div>
+                                <div className="str-about-textarea">
+                                    Ребенок после прохождения курса:
                                 </div>
                                 <div className="str-about-list ul-li-block">
                                     <ul>
-                                        <li>с легкостью решать сложные задачи и находить несколько вариантов их решений;</li>
-                                        <li>использовать компьютер не только как средство развлечения, но и как рабочий инструмент;</li>
-                                        <li>самостоятельно реализовывать собственную креативность для создания уникальных проектов.</li>
+                                        <li>Знает Scratch;</li>
+                                        <li>Имеет сертификат о прохождении курса.</li>
                                     </ul>
                                 </div>
-                                <div className="str-about-details">
-                                    Завершив курс, ученик будет иметь:
+                                <div className="str-about-textarea">
+                                    Умеет:
                                 </div>
                                 <div className="str-about-list ul-li-block">
                                     <ul>
-                                        <li>навыки работы с: переменными, условиями, циклами, функциями, работой со звуком и
-                                            анимацией;
-                                        </li>
-                                        <li>более 20 готовых проектов;</li>
-                                        <li>сертификат по окончании обучения.</li>
+                                        <li>Работать с переменными, условиями, циклами, функциями, работой со звуком и анимацией;</li>
+                                        <li>Анализировать задачи и находить пути решения при помощи блочной среды программирования Scratch;</li>
+                                        <li>Применять основы геймдизайна при проектировании игр;</li>
+                                        <li>Создавать презентацию и защищать свой проект.</li>
                                     </ul>
                                 </div>
-                                <div className="d-flex pb-5 direction-buttons">
-                                    <ButtonUpDown text={'Назад'} icon={'fas fa-arrow-left'} callbacks={{onClick: props.history.goBack}}/>
-                                    <div className='ml-4'>
-                                        <ButtonUpDown text={'Записаться'} icon={'fas fa-user-plus'} link={"#ei-newslatter"}/>
-                                    </div>
-                                </div>
+                                <DirectionButtonBlock history={props.history} text={'Записаться'} icon={'fas fa-user-plus'} link={"#ei-newslatter"} />
                             </div>
                         </div>
                         <div className="col-lg-6 col-12">
                             <div className="str-about-img position-relative d-flex justify-content-center">
-                                <img className={'direction-resource'} src={gif} alt={'scratch'} />
-                                {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/u_pnia4Xhlw" title="YouTube video player"
-                                        frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen/>*/}
+                                <img className={'direction-resource'} src={gif} alt={'scratch'}/>
                             </div>
                         </div>
                     </div>

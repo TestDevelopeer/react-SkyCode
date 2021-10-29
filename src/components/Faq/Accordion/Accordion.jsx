@@ -8,7 +8,7 @@ const Accordion = (props) => {
                 <div className="row">
                     {props.accordionItems.map((value, index) => {
                         return (
-                            <div key={`accordion_${index}`} className="col-md-6 col-12">
+                            <div key={`accordion_${index}`} className="col-md-12 col-12">
                                 <AccordionItem key={`accordion_${index}`} accordionItem={value} index={index} />
                             </div>
                         )

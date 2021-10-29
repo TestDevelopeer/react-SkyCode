@@ -23,8 +23,9 @@ function App() {
                     <Route exact path='/price/:course' component={Price}/>
                     <Route exact path='*' component={LandingContainer}/>
                 </Switch>
+                <Route path='/' component={Footer}/>
             </BrowserRouter>
-            <Footer/>
+
         </Provider>
     );
 }
