@@ -1641,8 +1641,8 @@ a:visited {
 }
 
 .testimonial_indicator .carousel-indicators li:nth-child(4) {
-    top: 90px;
-    left: 100px;
+    top: 10px;
+    left: 20px;
 }
 
 .testimonial_indicator .carousel-indicators li:nth-child(5) {
@@ -1657,8 +1657,9 @@ a:visited {
     top: -30px;
 }
 
-.testimonial_indicator .carousel-indicators li:nth-child(6) img {
-    width: 100%;
+.testimonial_indicator .carousel-indicators li:nth-child(7) {
+    right: -30px;
+    top: 140px;
 }
 
 .testimonial_indicator .active {
@@ -2988,6 +2989,7 @@ SaaSio - HR Management
     display: flex;
     align-items: center;
     padding-bottom: 25px;
+    justify-content: space-between;
 }
 
 .str-about-section .str-about-content .str-about-textarea {
@@ -3316,4 +3318,12 @@ SaaSio - HR Management
     .main-title-text h2 {
         font-size: 20px;
     }
+}
+
+.directionLinks {
+    display: flex;
+}
+
+.directionLinks .directionNextLinks:not(:first-child) {
+    margin-left: 10px;
 }

@@ -9,6 +9,7 @@ import {compose} from "redux";
 import {withRouter} from "react-router-dom";
 import Advertising from "../Elements/Advertising/Advertising";
 import CountUp from "../countUp/CountUp";
+import Helmet from "react-helmet";
 
 const Landing = (props) => {
     useEffect(() => {
@@ -24,6 +25,11 @@ const Landing = (props) => {
     }, []);
     return (
         <>
+            <Helmet>
+                <meta name="description"
+                      content=" Детская онлайн-школа программирования для ребят 8 - 16 лет. Учим делать игры, сайты, мобильные приложения. Roblox Studio. Курсы программирования для детей онлайн"/>
+                <title>Детская онлайн-школа программирования SKY-ACADEMY | IT академия SKY-ACADEMY</title>
+            </Helmet>
             <Advertising/>
             <div className="animate__animated animate__fadeInLeft">
                 <MainSection/>

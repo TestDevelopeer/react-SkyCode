@@ -18,7 +18,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <div className="ei-footer-shape3 position-absolute"><img src={eimap} alt=""/></div>
+            <div className="ei-footer-shape3 position-absolute"><img src={eimap} alt="курсы веб дизайна для детей | Roblox Studio|Python| айти школа Киев| айти школа Украина | Scratch | Скретч для детей | индивидуальные уроки"/></div>
         </section>
     );
 }

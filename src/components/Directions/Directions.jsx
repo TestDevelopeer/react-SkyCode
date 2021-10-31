@@ -32,7 +32,7 @@ const Directions = (props) => {
                         <div className="row justify-content-md-center">
                             {cardInfo.map((value, index) => {
                                 return (
-                                    <div key={index} className="col-lg-4 col-md-6">
+                                    <div key={index} className="col-lg-6 col-md-6">
                                         <DirectionCard cardInfo={value}/>
                                     </div>
                                 )

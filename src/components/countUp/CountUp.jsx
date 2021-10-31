@@ -3,7 +3,6 @@ import CounUpCounter from "./CountUpCounter";
 import {compose} from "redux";
 import {connect} from "react-redux";
 import VisibilitySensor from 'react-visibility-sensor';
-import Title from "../Elements/Title/Title";
 
 const CountUp = (props) => {
     return (

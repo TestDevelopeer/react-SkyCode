@@ -29,10 +29,10 @@ const Faq = (props) => {
                     </div>
                 </div>
             </div>
-            <span className="ei-faq-shape fq-shape-style2"><img src={fqShape2} alt=""/></span>
-            <span className="ei-faq-shape fq-shape-style3"><img src={fqShape3} alt=""/></span>
-            <span className="ei-faq-shape fq-shape-style4" data-parallax="{&quot;y&quot; : 60}"><img src={fqShape4} alt=""/></span>
-            <span className="ei-faq-shape fq-shape-style5"><img src={fqShape5} alt=""/></span>
+            <span className="ei-faq-shape fq-shape-style2"><img src={fqShape2} alt="курсы веб дизайна для детей | Roblox Studio|Python| айти школа Киев| айти школа Украина | Scratch | Скретч для детей | индивидуальные уроки"/></span>
+            <span className="ei-faq-shape fq-shape-style3"><img src={fqShape3} alt="курсы веб дизайна для детей | Roblox Studio|Python| айти школа Киев| айти школа Украина | Scratch | Скретч для детей | индивидуальные уроки"/></span>
+            <span className="ei-faq-shape fq-shape-style4" data-parallax="{&quot;y&quot; : 60}"><img src={fqShape4} alt="курсы веб дизайна для детей | Roblox Studio|Python| айти школа Киев| айти школа Украина | Scratch | Скретч для детей | индивидуальные уроки"/></span>
+            <span className="ei-faq-shape fq-shape-style5"><img src={fqShape5} alt="курсы веб дизайна для детей | Roblox Studio|Python| айти школа Киев| айти школа Украина | Scratch | Скретч для детей | индивидуальные уроки"/></span>
         </section>
     );
 }

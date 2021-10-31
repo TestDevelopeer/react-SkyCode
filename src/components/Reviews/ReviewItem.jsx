@@ -31,7 +31,7 @@ const ReviewItem = (props) => {
                 <div className="qoute_mark relative-position"/>
                 <div className="testimonial_name_designation">
                     <div className="testimonial_img float-left">
-                        <img src={process.env.REACT_APP_BASENAME + avatar} alt=""/>
+                        <img src={process.env.REACT_APP_BASENAME + avatar} alt="отзывы SKY-ACADEMY | отзывы школа программирования SKY ACADEMY"/>
                     </div>
                     <div className="testimonial_meta saas-modern-headline pera-content">
                         <h4>{user}</h4>

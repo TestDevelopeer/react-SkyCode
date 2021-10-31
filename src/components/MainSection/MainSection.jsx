@@ -54,7 +54,7 @@ const MainSection = (props) => {
                             </div>
                         </div>
                     </div>
-                    <img src={bLaptop} alt=""/>
+                    <img src={bLaptop} alt="курсы веб дизайна для детей | Roblox Studio|Python| айти школа Киев| айти школа Украина | Scratch | Скретч для детей | индивидуальные уроки"/>
                 </div>
             </div>
             <div className="waveWrapper waveAnimation">
