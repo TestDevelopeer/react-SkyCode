@@ -1,5 +1,6 @@
 sitemap.xml
 robots.txt
 .htaccess
-./bot
-./price/textolite
+./bot/
+./price/textolite/
+./.idea/
